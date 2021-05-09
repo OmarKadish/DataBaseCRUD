@@ -1,0 +1,81 @@
+@model Employee
+
+<div class="jumbotron mt-5">
+    <h1 class="text-primary">Create New Employee</h1>
+    <hr>
+    <div class="row">
+        <div class="col-8">
+            <form asp-action="Create">
+                <div class="form-group was-validated">
+                    <label for="id">Id</label>
+                    <input asp-for="Id" type="number" class="form-control is-invalid" id="id" required
+                        aria-describedby="desciption">
+                    <small id="desciption" class="form-text text-muted">Enter an Unique Id.</small>
+                </div>
+                <div class="form-group was-validated">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" class="form-control is-invalid" id="name" asp-for="Name" required>
+                </div>
+                <div class="form-group was-validated">
+                    <label for="sureName">SureName</label>
+                    <input asp-for="SureName" type="text" class="form-control is-invalid" id="sureName" required>
+                </div>
+                <div class="form-group">
+                    <label for="address" class="form-label">Address</label>
+                    <input asp-for="Address" type="text" class="form-control" id="address"
+                        placeholder="Apartment, studio, or floor">
+                </div>
+                <div class="card" style="padding:2rem;">
+                    <div class="row">
+                        <div class="form-group col">
+                            <label for="photo">Photo</label>
+                            <input asp-for="Photo" type="text" class="form-control" id="photo"
+                                aria-describedby="resimYardim" placeholder="ahmet.jpg">
+                            <small id="resimYardim" class="form-text text-muted">Enter The Image's Path.</small>
+                        </div>
+                        <div class="form-group col">
+                            <label for="imgInp">Or Upload Image</label>
+                            <div class="input-group">
+                                <span class="input-group-btn">
+                                    <span class="btn btn-default btn-file">
+                                        <input type="file" asp-for="Photo" id="imgInp">
+                                    </span>
+                                </span>
+                            </div>
+                            <img id='img-upload' class="img-thumbnail" />
+                        </div>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary">Save</button>
+            </form>
+            @* <form asp-action="Create">
+
+                <div class="form-group">
+                <label for="id">Id</label>
+                <input asp-for="Id" type="number" class="form-control" id="id" aria-describedby="sicilNoYardim">
+                <small id="sicilNoYardim" class="form-text text-muted">Benzersiz bir sicil numarası
+                girilmelidir</small>
+                </div>
+
+                <div class="form-group">
+                <label for="name">Name</label>
+                <input asp-for="Name" type="text" class="form-control" id="name">
+                </div>
+
+                <div class="form-group">
+                <label for="sureName">SureName</label>
+                <input asp-for="SureName" type="text" class="form-control" id="sureName">
+                </div>
+
+                <div class="form-group">
+                <label for="photo">Photo</label>
+                <input asp-for="Photo" type="text" class="form-control" id="photo" aria-describedby="resimYardim"
+                placeholder="ahmet.jpg">
+                <small id="resimYardim" class="form-text text-muted">Resmin yolu girilmedir</small>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Create</button>
+                </form> *@
+        </div>
+    </div>
+</div>

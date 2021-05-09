@@ -1,0 +1,9 @@
+@model Employee
+<div class="jumbotron mt-5">
+<h2 class="text-danger">@Model.FullName</h2>
+<h5 class="text-primary">(@Model.Id)</h5>
+<hr>
+
+<img src="/EmployeesPhotos/@Model.Photo" style="width: 250px;" alt="@Model.Name">
+</div>
+<a asp-action="Index" class="btn btn-secondary mt-3">Back</a>

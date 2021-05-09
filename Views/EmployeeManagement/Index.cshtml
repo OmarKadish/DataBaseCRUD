@@ -1,0 +1,62 @@
+@model IEnumerable<Employee>
+<div class="jumbotron mt-5">
+    <h2 class="text-danger">Employees List</h2>
+
+    <a asp-action="Create" class="btn btn-outline-primary mt-3">New Employee</a>
+    <input type="text" class="form-control mt-3" placeholder="Enter Name" id="name">
+    <table class="table table-hover mt-3">
+        <thead>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Address</th>
+            <th>Option</th>
+        </thead>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Id</td>
+                <td>@item.FullName</td>
+                <td>@item.Address</td>
+                <td>
+                    @*To pass a parametar to the view we used asp-rout-id*@
+                    <a class="btn btn-outline-primary" asp-action="Details" asp-route-id="@item.Id">Details</a>
+                    @*To pass a parametar to the view we used asp-rout-id*@
+                    <a class="btn btn-outline-secondary" asp-action="Edit" asp-route-id="@item.Id">Edit</a>
+                    <!-- Button trigger modal -->
+                <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#modal@(item.Id)">
+                        Delete
+                    </button>
+
+                    <!-- Modal -->
+                <div class="modal fade" id="modal@(item.Id)" tabindex="-1" role="dialog"
+                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Deleting Employee</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <img src="/EmployeesPhotos/@item.Photo" style="width: 50px;"><span class="text-danger">@item.FullName</span>
+                                    <hr style="width: 80%;">
+                                    This Employees Informations Will be Deleted. Are You Sure You Want To Do That?
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    @*The button tag wont work here as delete action. That's why we change it to a tag*@
+                                    <a class="btn btn-danger" asp-action="Delete"
+                                    asp-route-id="@item.Id">Delete</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </td>
+            </tr>
+        }
+    </table>
+</div>
