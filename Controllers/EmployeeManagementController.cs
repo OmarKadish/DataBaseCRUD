@@ -10,11 +10,11 @@ namespace DataBaseCRUD.Controllers
 {
     public class EmployeeManagementController : Controller
     {
-        //private readonly AppDbContext _context;
-        private readonly FakeData _context;
+        private readonly AppDbContext _context;
+        //private readonly FakeData _context;
 
         //Dependency Injection. Bağımlı Enjeksiyon
-        public EmployeeManagementController(FakeData context) //Constructure
+        public EmployeeManagementController(AppDbContext context) //Constructure
         {
             _context = context;
         }

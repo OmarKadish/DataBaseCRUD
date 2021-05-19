@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "U0xtzaVHtWzjXhv1Jn/AgRAtvGggX3FkKJLgKjIsJRqIvN+GWhm+M9mT5sVLn8lKO9GT6Gq88o1wxL5WlcdVEw==",
+  "dgSpecHash": "LmiwSGCT3wFSWorhr1MAnrCh4W10Vq5Z/sFHDQR/QQz0JSsNwsGLhoCOIX7zVnfamsAtIaIwhGV9sJjcs8TRQA==",
   "success": true,
-  "projectFilePath": "c:\\Users\\OMAR\\Desktop\\Ankara\\Projects\\DataBaseCRUD\\DataBaseCRUD.csproj",
+  "projectFilePath": "C:\\Users\\OMAR\\Desktop\\Ankara\\Projects\\DataBaseCRUD\\DataBaseCRUD.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\OMAR\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\OMAR\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",

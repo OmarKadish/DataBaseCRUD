@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\OMAR\\Desktop\\Ankara\\Projects\\DataBaseCRUD\\DataBaseCRUD.csproj": {}
+    "C:\\Users\\OMAR\\Desktop\\Ankara\\Projects\\DataBaseCRUD\\DataBaseCRUD.csproj": {}
   },
   "projects": {
-    "c:\\Users\\OMAR\\Desktop\\Ankara\\Projects\\DataBaseCRUD\\DataBaseCRUD.csproj": {
+    "C:\\Users\\OMAR\\Desktop\\Ankara\\Projects\\DataBaseCRUD\\DataBaseCRUD.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\OMAR\\Desktop\\Ankara\\Projects\\DataBaseCRUD\\DataBaseCRUD.csproj",
+        "projectUniqueName": "C:\\Users\\OMAR\\Desktop\\Ankara\\Projects\\DataBaseCRUD\\DataBaseCRUD.csproj",
         "projectName": "DataBaseCRUD",
-        "projectPath": "c:\\Users\\OMAR\\Desktop\\Ankara\\Projects\\DataBaseCRUD\\DataBaseCRUD.csproj",
+        "projectPath": "C:\\Users\\OMAR\\Desktop\\Ankara\\Projects\\DataBaseCRUD\\DataBaseCRUD.csproj",
         "packagesPath": "C:\\Users\\OMAR\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\OMAR\\Desktop\\Ankara\\Projects\\DataBaseCRUD\\obj\\",
+        "outputPath": "C:\\Users\\OMAR\\Desktop\\Ankara\\Projects\\DataBaseCRUD\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\OMAR\\AppData\\Roaming\\NuGet\\NuGet.Config"
